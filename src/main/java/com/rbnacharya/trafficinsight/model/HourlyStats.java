@@ -22,10 +22,10 @@ public class HourlyStats {
     @Column(name = "time", nullable = false)
     private Timestamp time;
 
-    @Column(name = "request_count", nullable = false, columnDefinition = "BIGINT UNSIGNED")
+    @Column(name = "request_count", nullable = false, columnDefinition = "BIGINT")
     private Long requestCount;
 
-    @Column(name = "invalid_count", nullable = false, columnDefinition = "BIGINT UNSIGNED")
+    @Column(name = "invalid_count", nullable = false, columnDefinition = "BIGINT")
     private Long invalidCount;
 
 }
