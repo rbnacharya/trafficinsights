@@ -9,7 +9,7 @@ TrafficInsights is a demo project designed to demonstrate some APIs. It showcase
 Before you begin, ensure you have met the following requirements:
 
 - Java JDK 17 installed
-- Gradle (compatible with the version used in the project, preferably the latest)
+- Gradle (7.3)
 - Docker (optional, for containerization)
 
 ## Installing and Running TrafficInsights
