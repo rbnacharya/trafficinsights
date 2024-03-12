@@ -28,4 +28,42 @@ public class HourlyStats {
     @Column(name = "invalid_count", nullable = false, columnDefinition = "BIGINT")
     private Long invalidCount;
 
+    public HourlyStats(Customer customer, Timestamp time, Long requestCount, Long invalidCount) {
+        this.customer = customer;
+        this.time = time;
+        this.requestCount = requestCount;
+        this.invalidCount = invalidCount;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public Timestamp getTime() {
+        return time;
+    }
+
+    public Long getRequestCount() {
+        return requestCount;
+    }
+
+    public Long getInvalidCount() {
+        return invalidCount;
+    }
+
+    public void incrementRequestCount() {
+        this.requestCount++;
+    }
+
+    public void incrementInvalidCount() {
+        this.invalidCount++;
+    }
+
+    public HourlyStats() {
+    }
+
 }
